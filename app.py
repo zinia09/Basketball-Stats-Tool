@@ -1,7 +1,7 @@
+import copy
 import pdb
 
 from constants import PLAYERS, TEAMS
-import copy
 
 players = copy.copy(PLAYERS)
 teams = copy.copy(TEAMS)
@@ -44,18 +44,18 @@ def main():
     # Logic here
     print("BASKETBALL TEAM STATS TOOL")
 
-    print("-----MENU-----")
-    print("Here are your choices:\n A) Display Team Stats \n B) Quit")
+    print("\n-----MENU-----")
+    print("\nHere are your choices:\n A) Display Team Stats \n B) Quit")
     menu = ['A', 'B', 'a', 'b']
-    option = str(input("Enter your option:  "))
+    option = str(input("\nEnter your option:  "))
 
     while option not in menu:
         option = str(input("Enter your option:  "))
 
     if option == 'A' or option == 'a':
-        print(" A) Panthers\n B) Bandits\n C) Warriors")
+        print("\n A) Panthers\n B) Bandits\n C) Warriors")
         team_choices = ['A', 'B', 'C', 'a', 'b', 'c']
-        team_option = str(input("Enter your option:  "))
+        team_option = str(input("\nEnter your option:  "))
 
         while team_option not in team_choices:
             team_option = str(input("Enter your option:  "))
@@ -72,12 +72,11 @@ def main():
         exit()
 
     selected_team = teams[selected_team_index]
-
     number_of_players, balanced_teams = balance_teams(clean_data(players), teams)
 
     for team in balanced_teams:
         if team['team'] == selected_team:
-            print(f"Team: {selected_team} Stats")
+            print(f"\nTeam: {selected_team} Stats")
             print("-----------------------")
             print(f"Total players: {number_of_players}")
             # assign the player names as strings separated by commas
@@ -85,7 +84,7 @@ def main():
             for player in team['players']:
                 player_names.append(player['name'])
                 ', '.join(player_names)
-            print(f"Players on Team: {player_names}")
+            print(f"\nPlayers on Team:\n {player_names}")
 
 
 if __name__ == "__main__":
