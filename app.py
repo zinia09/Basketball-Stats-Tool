@@ -81,8 +81,10 @@ def main():
             print("-----------------------")
             print(f"Total players: {number_of_players}")
             # assign the player names as strings separated by commas
+            player_names = []
             for player in team['players']:
-                player_names = player['name']
+                player_names.append(player['name'])
+                ', '.join(player_names)
             print(f"Players on Team: {player_names}")
 
 
