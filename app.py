@@ -1,6 +1,6 @@
 import copy
 import pdb
-
+import constants
 from constants import PLAYERS, TEAMS
 
 players = copy.copy(PLAYERS)
@@ -83,8 +83,7 @@ def main():
             player_names = []
             for player in team['players']:
                 player_names.append(player['name'])
-                ', '.join(player_names)
-            print(f"\nPlayers on Team:\n {player_names}")
+            print(f"\nPlayers on Team:\n {', '.join(player_names)}")
 
 
 if __name__ == "__main__":
