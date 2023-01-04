@@ -1,5 +1,5 @@
 TEAMS = [
-    'lions',
+    'Panthers',
     'Bandits',
     'Warriors',
 ]
