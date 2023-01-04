@@ -1,6 +1,5 @@
 import copy
-import pdb
-import constants
+
 from constants import PLAYERS, TEAMS
 
 players = copy.copy(PLAYERS)
@@ -53,7 +52,7 @@ def main():
         option = str(input("Enter your option:  "))
 
     if option == 'A' or option == 'a':
-        print("\n A) Panthers\n B) Bandits\n C) Warriors")
+        print(f"\n A) {teams[0]}\n B) {teams[1]}\n C) {teams[2]}")
         team_choices = ['A', 'B', 'C', 'a', 'b', 'c']
         team_option = str(input("\nEnter your option:  "))
 
