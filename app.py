@@ -61,17 +61,17 @@ def main():
             team_option = str(input("Enter your option:  "))
 
         if team_option == 'A' or team_option == 'a':
-            selected_team_index = 0
+            team_index = 0
         elif team_option == 'B' or team_option == 'b':
-            selected_team_index = 1
+            team_index = 1
         elif team_option == 'C' or team_option == 'c':
-            selected_team_index = 2
+            team_index = 2
         else:
             exit()
     else:
         exit()
 
-    selected_team = teams[selected_team_index]
+    selected_team = teams[team_index]
     number_of_players, balanced_teams = balance_teams(clean_data(players), teams)
 
     for team in balanced_teams:
