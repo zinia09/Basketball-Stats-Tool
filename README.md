@@ -1,4 +1,3 @@
-# Techdegree_Project_2
-You have been given a list of teams and players. You've been tasked with cleaning up the player data and then organizing the players into equal teams for the upcoming basketball season.
-
-You will apply your knowledge of built-in Python data types and combine these types to create structures to store and organize a team of Basketball players into distributed teams. This tool will not only balance the teams by the total number of players but also let you generate some statistics for a given team.
+# Basketball Stats Tool
+## Techdegree_Project_2
+This project involves cleaning up player data and organizing players into equal teams for the upcoming basketball season. The program is built using Python data types to create structures that can store and organize a team of basketball players into distributed teams. The tool is designed to balance the teams by the total number of players and generate statistics for a given team.
